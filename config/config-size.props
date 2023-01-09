@@ -1,0 +1,14 @@
+######## Kafka props #########
+kafka.bootstrap.servers=localhost:9092
+kafka.group.id=pkg
+kafka.input.topic=pkg-input
+
+######## PKG props ##########
+prepare.data.type=SIMPLE
+prepare.data.group.by.key.fields=a1,a2
+
+packager.type=SIZE
+packager.file.extension=json
+packager.max.zip.size.mb=0.2
+packager.directory.path=C:\\temp
+packager.entry.name.field=uid
